@@ -1,6 +1,6 @@
-# cnode
+# Vue仿写CNode社区
 
-> A Vue.js project
+> 基于CNode社区提供的API获取数据
 
 ## Build Setup
 

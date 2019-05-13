@@ -36,7 +36,7 @@ Vue.filter('formatDate',function(str){
   }else if((time/2592000000)<12){
     return parseInt((time/2592000000))+'月前'
   }else{
-    return parseInt((time/31104000000))+'月前'
+    return parseInt((time/31104000000))+'年前'
   }
 })
 

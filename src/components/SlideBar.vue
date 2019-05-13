@@ -70,7 +70,7 @@
         },
         watch:{
             '$route'(to,from){
-                this.getArticleData()
+                this.getData()
         }
     }
     }

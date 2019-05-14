@@ -45,11 +45,7 @@
                     return;
                 }
                 this.currentPage = page;
-                if(page>4){
-                    this.jduge = true;
-                }else if(this.pagebtns[0]<=2){
-                    this.jduge = false;
-                }
+                
                 if(page == this.pagebtns[4] ){
                     this.pagebtns.shift();//移除第一个元素
                     this.pagebtns.splice(4,0,this.pagebtns[3]+1);//添加最后一个
@@ -58,6 +54,11 @@
                     this.pagebtns.unshift(this.pagebtns[0]-1);
                     //移除最后一个数字
                     this.pagebtns.splice(5,1);
+                }
+                if(page>4){
+                    this.jduge = true;
+                }else if(this.pagebtns[0]<=1){
+                    this.jduge = false;
                 }
                 this.$emit('handleList',this.currentPage);
             },
